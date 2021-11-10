@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+//font-family: 'Comfortaa', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+// font-family: 'Quicksand', sans-serif;
+
+$font-family-primary: 'Comfortaa', cursive;
+$font-family-secondary: 'Quicksand', sans-serif;
+
+:root {
+  font-family: $font-family-secondary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: $font-family-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-secondary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

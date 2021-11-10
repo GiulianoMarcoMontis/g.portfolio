@@ -1,0 +1,88 @@
+// COLORS //////////////////////////////////
+
+//Background colors
+$bg-color--primary: #f3dd8b;
+$bg-color--secondary: #e8fffe;
+$bg-color--special: #c1eebb;
+
+$bg-color-card-light: #e8fffe;
+$bg-color-card-dark: #3d413a;
+$bg-color-suggest-box: #d5eebb;
+
+$bg-color-companion-good: #0e884b;
+$bg-color-companion-bad: #e60c55;
+
+//Font colors
+$font-color-primary: #3d413a;
+$font-color-secondary: #567059;
+$font-color-special: #f3dd8b;
+$font-color-place-holder: #3d413a80;
+$font-color-light: #e8fffe;
+$font-color-dark: #3d413a;
+
+// SHADOWS //////////////////////////////////
+
+$b-shadow-normal: 0rem 0.5rem 0.5rem #00000040;
+$b-shadow-special: 0rem 0.7rem 0.7rem #00000040;
+$b-shadow-active: 0rem 0.3rem 0.3rem #00000040;
+
+// SPACING //////////////////////////////////
+
+// paddings
+
+// change p-base to change paddings
+$p-base: 0.5rem;
+////////////////////////////
+
+$p-small: $p-base * 1;
+$p-medium: $p-base * 2; // 1rem
+$p-large: $p-base * 4; // 2rem
+$p-x-large: $p-base * 6; // 3 rem
+
+// margins
+
+// change m-base to change margins
+$m-base: 0.5rem;
+////////////////////////////
+
+$m-small: $m-base * 1;
+$m-medium: $m-base * 2;
+$m-large: $m-base * 4;
+$m-x-large: $m-base * 6;
+
+// FONT-SIZES //////////////////////////////////
+
+// change p-base to change all other paddings
+$f-base: 0.5rem;
+////////////////////////////
+
+$f-x-small: $f-base * 1;
+$f-small: $f-base * 1.5;
+$f-medium: $f-base * 2;
+$f-large: $f-base * 4;
+$f-x-large: $f-base * 6;
+
+// BORDER-RADIUS //////////////////////////////////
+
+$b-radius-normal: 1rem;
+$b-radius-special: 1rem;
+
+// TRANSITION //////////////////////////////////
+
+$transition-normal: all 0.5s ease-in-out;
+
+// BREAKPOINTS //////////////////////////////////
+
+// Mobile-first (use min-width in the media queries)
+
+// mobile
+$bp-mobile-md: 360px;
+
+// tablet
+$bp-tablet-sm: 760px;
+
+// laptop
+$bp-laptop-sm: 1024px;
+
+// desktop
+$bp-desktop-sm: 1900px;
