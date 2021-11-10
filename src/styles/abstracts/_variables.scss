@@ -1,24 +1,13 @@
 // COLORS //////////////////////////////////
 
 //Background colors
-$bg-color--primary: #f3dd8b;
-$bg-color--secondary: #e8fffe;
-$bg-color--special: #c1eebb;
-
-$bg-color-card-light: #e8fffe;
-$bg-color-card-dark: #3d413a;
-$bg-color-suggest-box: #d5eebb;
-
-$bg-color-companion-good: #0e884b;
-$bg-color-companion-bad: #e60c55;
+$bg-color--primary: #3e0e12;
+$bg-color--primary-dark: #2f0a0d;
+$bg-color--primary-light: #7b6f71;
+$bg-color--primary-lighter: #fbf9f9;
 
 //Font colors
-$font-color-primary: #3d413a;
-$font-color-secondary: #567059;
-$font-color-special: #f3dd8b;
-$font-color-place-holder: #3d413a80;
-$font-color-light: #e8fffe;
-$font-color-dark: #3d413a;
+$font-color-primary: #524748;
 
 // SHADOWS //////////////////////////////////
 
@@ -30,46 +19,40 @@ $b-shadow-active: 0rem 0.3rem 0.3rem #00000040;
 
 // paddings
 
-// change p-base to change paddings
-$p-base: 0.5rem;
-////////////////////////////
-
-$p-small: $p-base * 1;
-$p-medium: $p-base * 2; // 1rem
-$p-large: $p-base * 4; // 2rem
-$p-x-large: $p-base * 6; // 3 rem
+$padding-1: 0.5rem;
+$padding-2: 1rem;
+$padding-3: 1.5rem;
+$padding-4: 2rem;
+$padding-5: 2.5rem;
+$padding-6: 3rem;
 
 // margins
 
-// change m-base to change margins
-$m-base: 0.5rem;
-////////////////////////////
+$margin-1: 0.5rem;
+$margin-2: 1rem;
+$margin-3: 1.5rem;
+$margin-4: 2rem;
+$margin-5: 2.5rem;
+$margin-6: 3rem;
 
-$m-small: $m-base * 1;
-$m-medium: $m-base * 2;
-$m-large: $m-base * 4;
-$m-x-large: $m-base * 6;
+// Z-INDEXES //////////////////////////////////
 
-// FONT-SIZES //////////////////////////////////
-
-// change p-base to change all other paddings
-$f-base: 0.5rem;
-////////////////////////////
-
-$f-x-small: $f-base * 1;
-$f-small: $f-base * 1.5;
-$f-medium: $f-base * 2;
-$f-large: $f-base * 4;
-$f-x-large: $f-base * 6;
+$z-normal: 100;
+$z-tooltip: 1000;
+$z-fixed: 10000;
 
 // BORDER-RADIUS //////////////////////////////////
 
-$b-radius-normal: 1rem;
+$b-radius-normal: 0.5rem;
 $b-radius-special: 1rem;
 
 // TRANSITION //////////////////////////////////
 
 $transition-normal: all 0.5s ease-in-out;
+
+// Nav height //////////////////////////////////
+
+$nav-height: 3rem;
 
 // BREAKPOINTS //////////////////////////////////
 

@@ -1,0 +1,24 @@
+@use './variables' as *;
+@use './typography' as *;
+@use './mixins' as *;
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+.section-title {
+  font-size: $f-size-h1;
+  color: $bg-color--primary;
+  margin-bottom: $margin-3;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: $f-size-x-small;
+  font-weight: $f-wight-semi-bold;
+}

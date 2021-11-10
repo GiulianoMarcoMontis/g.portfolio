@@ -1,5 +1,3 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 // components
 import Navigation from './components/Navigation';
 
@@ -13,18 +11,16 @@ import NotFound from './views/NotFound';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div>
-        <Navigation />
-        <main>
-          <Hero />
-          <About />
-          <Projects />
-          <Design />
-          <Contacts />
-        </main>
-      </div>
-    </BrowserRouter>
+    <div>
+      <Navigation />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <Design />
+        <Contacts />
+      </main>
+    </div>
   );
 };
 

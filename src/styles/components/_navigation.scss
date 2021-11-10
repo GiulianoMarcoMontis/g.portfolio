@@ -1,0 +1,67 @@
+@use '../abstracts/' as *;
+
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin: 0 $margin-2;
+}
+
+bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-fixed;
+  background-color: #000;
+}
+
+.nav {
+  height: $nav-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@include mQuery($bp-tablet-sm) {
+  .nav__menu {
+    position: fixed;
+    top: $nav-height;
+    left: 0;
+    width: 100%;
+    padding-top: $padding-3;
+    text-align: center;
+    background-color: #000;
+    transition: 0.4s;
+    box-shadow: $b-shadow-normal;
+    border-radius: 0 0 $b-radius-normal $b-radius-normal;
+  }
+}
+
+.nav__item {
+  margin-bottom: $margin-3;
+}
+
+.nav__link {
+  color: $bg-color--primary-lighter;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  color: $bg-color--primary-light;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: $bg-color--primary-lighter;
+}
+
+.toggler__svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer;
+}

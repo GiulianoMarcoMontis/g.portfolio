@@ -1,32 +1,59 @@
+@use './variables' as *;
+@use './mixins' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 //font-family: 'Comfortaa', cursive;
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 // font-family: 'Quicksand', sans-serif;
 
+// font families
 $font-family-primary: 'Comfortaa', cursive;
 $font-family-secondary: 'Quicksand', sans-serif;
 
-:root {
-  font-family: $font-family-secondary;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+// Font-sizes //////////////////////////////////
+$f-size-x-large: 2.5rem;
+$f-size-h1: 1.5rem;
+$f-size-h2: 1.25rem;
+$f-size-h3: 1.125rem;
+$f-size-normal: 0.9rem;
+$f-size-small: 0.8rem;
+$f-size-x-small: 0.75rem;
+
+// Font-weights //////////////////////////////////
+
+$f-wight-light: 300;
+$f-wight-medium: 500;
+$f-wight-semi-bold: 600;
+$f-wight-bold: 700;
+
+// media queries for root
+@include mQuery($bp-mobile-md) {
+  :root {
+    //font-size: 100%;
+  }
 }
 
-h1 {
-  font-family: $font-family-primary;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+@include mQuery($bp-tablet-sm) {
+  :root {
+    $f-size-x-large: 4.5rem;
+    $f-size-h1: 2.25rem;
+    $f-size-h2: 1.5rem;
+    $f-size-h3: 1.25rem;
+    $f-size-normal: 1rem;
+    $f-size-small: 0.875rem;
+    $f-size-x-small: 0.813rem;
+  }
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-family-secondary;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@include mQuery($bp-laptop-sm) {
+  // :root {
+  //   font-size: 120%;
+  // }
+}
+
+@include mQuery($bp-desktop-sm) {
+  // :root {
+  //   font-size: 150%;
+  // }
 }

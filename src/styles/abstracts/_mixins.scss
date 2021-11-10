@@ -4,7 +4,7 @@
 // call it with @include mQuery() and pass one of the breakpoints
 
 @mixin mQuery($bp) {
-  @media screen and (min-width: $bp) {
+  @media screen and (max-width: $bp) {
     @content;
   }
 }
