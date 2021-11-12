@@ -1,5 +1,9 @@
 const NotFound = () => {
-  return <section>Nothing Found</section>;
+  return (
+    <section className="notFound section bd-container bg-grid">
+      Nothing Found
+    </section>
+  );
 };
 
 export default NotFound;

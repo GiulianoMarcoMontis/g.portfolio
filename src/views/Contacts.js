@@ -1,5 +1,9 @@
 const Contacts = () => {
-  return <section id="contacts">Contacts</section>;
+  return (
+    <section className="contacts section bd-container bg-grid" id="contacts">
+      Contacts
+    </section>
+  );
 };
 
 export default Contacts;

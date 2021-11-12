@@ -47,13 +47,13 @@ $f-wight-bold: 700;
 }
 
 @include mQuery($bp-laptop-sm) {
-  // :root {
-  //   font-size: 120%;
-  // }
+  :root {
+    //font-size: 120%;
+  }
 }
 
 @include mQuery($bp-desktop-sm) {
-  // :root {
-  //   font-size: 150%;
-  // }
+  :root {
+    //font-size: 150%;
+  }
 }

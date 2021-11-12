@@ -1,0 +1,23 @@
+@use '../abstracts/' as *;
+
+.about__data {
+  text-align: center;
+}
+
+.about__description span {
+  font-size: $f-size-h2;
+  font-weight: $f-wight-semi-bold;
+  color: $bg-color--primary;
+}
+
+.about__number {
+  font-size: $f-size-h1;
+  color: $bg-color--primary;
+  display: block;
+}
+
+.about__img {
+  justify-self: center;
+  width: 14rem;
+  border-radius: $b-radius-normal;
+}

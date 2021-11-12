@@ -1,0 +1,70 @@
+@use '../abstracts/' as *;
+
+.home {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.home__container {
+  position: relative;
+  height: calc(100vh - $nav-height);
+  grid-template-rows: repeat(2, max-content);
+  align-content: space-around;
+  row-gap: 2rem;
+}
+
+.home__data {
+  border-left: 0.3rem solid $bg-color--primary-lighter;
+  color: $bg-color--primary-lighter;
+  padding-left: $padding-3;
+  z-index: $z-tooltip;
+}
+.home__name {
+  font-size: $f-size-x-large;
+}
+
+.home__profession,
+.home__greeting {
+  display: block;
+  font-weight: $f-wight-bold;
+}
+
+.home__greeting {
+  font-size: $f-size-small;
+}
+
+.home__profession {
+  font-size: $f-size-normal;
+  margin-bottom: $margin-3;
+}
+
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.home__img img {
+  width: 15rem;
+}
+
+.home__social {
+  display: flex;
+  flex-direction: column;
+}
+
+.home__social-icon {
+  margin-bottom: $margin-2;
+
+  svg {
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: $bg-color--primary-lighter;
+  }
+}
+
+.home__social-icon:hover {
+  svg {
+    fill: $bg-color--primary-light;
+  }
+}

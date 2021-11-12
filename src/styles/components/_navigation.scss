@@ -1,16 +1,5 @@
 @use '../abstracts/' as *;
 
-.bd-container {
-  max-width: 1024px;
-  width: calc(100% - 2rem);
-  margin: 0 $margin-2;
-}
-
-bd-grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
 .l-header {
   width: 100%;
   position: fixed;
@@ -30,7 +19,7 @@ bd-grid {
 @include mQuery($bp-tablet-sm) {
   .nav__menu {
     position: fixed;
-    top: $nav-height;
+    top: -100%;
     left: 0;
     width: 100%;
     padding-top: $padding-3;
@@ -64,4 +53,57 @@ bd-grid {
   width: 1.3rem;
   height: 1.3rem;
   cursor: pointer;
+}
+
+// show and hide the menu on click
+.show-menu {
+  top: $nav-height;
+}
+
+// active link in the menu
+.active-link {
+  position: relative;
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0;
+  width: 65%;
+  height: 0.3rem;
+  background-color: $bg-color--primary-light;
+  border-radius: $b-radius-normal;
+}
+
+// scroll to the top icon
+
+.scrollTop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  @include flex-col-center;
+  padding: $padding-1;
+  background-color: rgba(123, 111, 113, 0.7);
+  border-radius: $b-radius-normal;
+  z-index: $z-tooltip;
+  transition: 0.4s;
+  visibility: hidden;
+}
+
+.scrollTop:hover {
+  background-color: $bg-color--primary;
+}
+
+.scrollTop__icon {
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer;
+}
+
+// show hide scrollTop icon
+
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem;
 }
