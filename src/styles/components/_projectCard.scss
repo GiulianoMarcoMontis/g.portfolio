@@ -1,0 +1,36 @@
+@use '../abstracts/' as *;
+
+.projectsCard__content {
+  background-color: #fff;
+  border-radius: $b-radius-normal;
+  overflow: hidden;
+  box-shadow: $b-shadow-normal;
+}
+
+.projectsCard__img {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.projectsCard__data {
+  padding: $padding-3;
+}
+
+.projectsCard__subtitle {
+  font-size: $f-size-small;
+  color: $bg-color--primary-light;
+}
+
+.projectsCard__title {
+  font-size: $f-size-h3;
+  color: $bg-color--primary;
+  margin: $margin-2 0;
+}
+
+.projectsCard__content:hover {
+  box-shadow: $b-shadow-normal;
+}
+
+.projectsCard__content:hover .projectsCard__img {
+  transform: scale(1.02);
+}

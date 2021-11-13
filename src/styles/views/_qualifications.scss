@@ -1,1 +1,48 @@
 @use '../abstracts/' as *;
+
+.qualifications__container {
+  row-gap: 2.5rem;
+}
+
+.qualifications__content {
+  margin-bottom: $margin-2;
+}
+
+.qualifications__title {
+  font-size: $f-size-h3;
+  color: $bg-color--primary;
+  margin-bottom: $margin-2;
+  display: flex;
+  align-items: center;
+}
+
+.qualifications__title-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: $margin-1;
+}
+
+.qualifications__box {
+  padding-bottom: $padding-2;
+  border-bottom: 0.1rem solid #ccc;
+}
+.qualifications__area {
+  font-size: $f-size-normal;
+  color: $bg-color--primary;
+  margin-bottom: $margin-1;
+  font-weight: $f-wight-medium;
+}
+
+.qualifications__work {
+  font-size: $f-size-small;
+  color: $bg-color--primary-light;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.qualifications__icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: $margin-1;
+}

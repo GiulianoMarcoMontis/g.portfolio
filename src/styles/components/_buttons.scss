@@ -16,3 +16,21 @@
 .button-light {
   background-color: $bg-color--primary-light;
 }
+
+.button-white {
+  background-color: $bg-color--primary-lighter;
+  color: $bg-color--primary-dark;
+}
+
+.button-white:hover {
+  background-color: $bg-color--primary-light;
+}
+
+.button-link {
+  background: none;
+  color: $bg-color--primary;
+}
+
+.button-white:hover {
+  background: none;
+}

@@ -1,0 +1,28 @@
+@use '../abstracts/' as *;
+
+.skills__data {
+  padding: $padding-6 $padding-2;
+  background-color: #fff;
+  border-radius: $b-radius-normal;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: $b-shadow-normal;
+}
+.skills__data:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: $b-shadow-active;
+}
+.skills__icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: $margin-2;
+  fill: $bg-color--primary;
+}
+
+.skills__title {
+  font-size: $f-size-h3;
+}
+
+.skills__description {
+  margin-bottom: $margin-4;
+}
