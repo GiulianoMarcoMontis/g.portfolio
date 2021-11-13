@@ -27,10 +27,17 @@
 }
 
 .button-link {
-  background: none;
-  color: $bg-color--primary;
+  transition: 0.4s;
+  margin-right: $margin-2;
+
+  svg {
+    width: 3rem;
+    height: 3rem;
+    fill: $bg-color--primary;
+  }
 }
 
-.button-white:hover {
+.button-link:hover {
   background: none;
+  transform: scale(1.1);
 }

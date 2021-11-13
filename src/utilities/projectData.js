@@ -80,7 +80,7 @@ export const projectData = [
     deployment: 'https://dictionary-react-eight.vercel.app',
   },
   {
-    projectName: 'Tetris-React()',
+    projectName: 'Tetris()',
     description:
       'Play some Tetris and forget about everything!! Advanced exercise to learn complex features of ReactJS & JS and their application into videogame programming. Inspired by Weibenfalk tutorial on freeCodeCamp!',
     achievements: [

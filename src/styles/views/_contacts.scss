@@ -1,1 +1,51 @@
 @use '../abstracts/' as *;
+
+.contacts__container {
+  row-gap: 2.5rem;
+}
+
+.contacts__content {
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.contacts__box {
+  background-color: #fff;
+  border-radius: $b-radius-normal;
+  padding: $padding-3;
+  text-align: center;
+  box-shadow: $b-shadow-normal;
+  transition: 0.4s;
+}
+
+.contacts__box:hover {
+  box-shadow: $b-shadow-special;
+}
+
+.contacts__icon {
+  width: 3rem;
+  height: 3rem;
+  svg {
+    fill: $bg-color--primary;
+  }
+}
+
+.contacts__title {
+  font-size: $f-size-h3;
+  margin: $margin-1 0;
+}
+
+.contacts__social {
+  color: $bg-color--primary-light;
+  font-size: $f-size-h3;
+  margin-top: $margin-1;
+
+  .contacts__social-icon {
+    margin: 0 $margin-1;
+  }
+
+  svg {
+    width: 3rem;
+    height: 3rem;
+    fill: $bg-color--primary;
+  }
+}
