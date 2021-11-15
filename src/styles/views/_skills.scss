@@ -2,16 +2,23 @@
 
 .skills__data {
   padding: $padding-6 $padding-2;
-  background-color: #fff;
+  background-color: $bgco-action--primary;
+  color: $fco-light;
   border-radius: $b-radius-normal;
   text-align: center;
   transition: 0.4s;
   box-shadow: $b-shadow-normal;
+
+  svg {
+    fill: $fco-light;
+  }
 }
+
 .skills__data:hover {
   transform: translateY(-0.5rem);
   box-shadow: $b-shadow-active;
 }
+
 .skills__icon {
   width: 3rem;
   height: 3rem;
@@ -24,6 +31,7 @@
 }
 
 .skills__description {
+  font-weight: $f-wight-light;
   margin-bottom: $margin-4;
 }
 

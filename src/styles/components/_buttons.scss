@@ -1,29 +1,31 @@
 @use '../abstracts/' as *;
 
+// button on home screen
 .button {
   display: inline-block;
-  background-color: $bg-color--primary;
-  color: $bg-color--primary-lighter;
+  background-color: $bgco-action--primary;
+  color: $fco-light;
   padding: $padding-2 $padding-3;
   border-radius: $b-radius-normal;
-  transition: 0.3s;
+  transition: 0.4s ease-in-out;
 }
 
 .button:hover {
-  background-color: $bg-color--primary-dark;
+  background-color: $bgco-action--secondary;
+  color: $fco-dark;
+  transform: scale(1.1);
 }
 
-.button-light {
-  background-color: $bg-color--primary-light;
-}
-
+// additional button light
 .button-white {
-  background-color: $bg-color--primary-lighter;
-  color: $bg-color--primary-dark;
+  background-color: $bgco-light;
+  color: $fco-dark;
 }
 
 .button-white:hover {
-  background-color: $bg-color--primary-light;
+  background-color: $bgco-light--darker;
+  color: $fco-light;
+  transform: scale(1.1);
 }
 
 .button-link {
@@ -33,7 +35,7 @@
   svg {
     width: 3rem;
     height: 3rem;
-    fill: $bg-color--primary;
+    fill: $fco-light;
   }
 }
 

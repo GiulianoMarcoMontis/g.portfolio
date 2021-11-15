@@ -7,13 +7,17 @@
 .about__description span {
   font-size: $f-size-h2;
   font-weight: $f-wight-semi-bold;
-  color: $bg-color--primary;
+  color: $fco-dark;
 }
 
 .about__number {
   font-size: $f-size-h1;
-  color: $bg-color--primary;
   display: block;
+  color: $fco-special--dark;
+}
+
+.about__achievement {
+  font-weight: $f-wight-medium;
 }
 
 .about__img {

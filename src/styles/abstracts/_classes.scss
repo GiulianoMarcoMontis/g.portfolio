@@ -13,7 +13,7 @@
 
 .section-title {
   font-size: $f-size-h1;
-  color: $bg-color--primary;
+  color: $fco-special--dark;
   margin-bottom: $margin-3;
 }
 
@@ -26,8 +26,7 @@
 .bd-container {
   max-width: 1024px;
   width: calc(100% - 2rem);
-  margin-left: $margin-2;
-  margin-right: $margin-2;
+  margin: 0 auto;
 }
 
 .bd-grid {

@@ -53,7 +53,7 @@ const ProjectCard = ({
             </svg>
           </a>
           <a
-            className=" button-link"
+            className="button-link"
             href={deployment}
             target="_blank"
             rel="noreferrer"

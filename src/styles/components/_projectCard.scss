@@ -1,8 +1,9 @@
 @use '../abstracts/' as *;
 
 .projectsCard__content {
-  background-color: #fff;
+  background-color: $bgco-dark;
   border-radius: $b-radius-normal;
+  border: 0.5rem solid $bgco-dark;
   overflow: hidden;
   box-shadow: $b-shadow-normal;
 }
@@ -26,22 +27,24 @@
 
 .projectsCard__title {
   font-size: $f-size-h2;
-  color: $bg-color--primary;
+  color: $fco-special--light;
   margin-bottom: $margin-2;
 }
 
 .projectsCard__description {
   font-size: $f-size-small;
-  color: $bg-color--primary-light;
+  font-weight: $f-wight-light;
+  color: $fco-light;
   margin: $margin-2 0;
 }
+
 .projectsCard__technologies {
   margin-bottom: $margin-3;
 }
 
 .projectsCard__subtitle {
   font-size: $f-size-normal;
-  color: $bg-color--primary;
+  color: $fco-light;
   margin-bottom: $margin-2;
 }
 
@@ -52,8 +55,9 @@
 
   .projectsCard__tech {
     font-size: $f-size-x-small;
-    color: $bg-color--primary-lighter;
-    background-color: $bg-color--primary-light;
+    font-weight: $f-wight-light;
+    color: $fco-light;
+    background-color: $bgco-action--primary;
     padding: 0.25rem $padding-1;
     border-radius: $b-radius-normal;
   }

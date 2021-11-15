@@ -19,7 +19,7 @@ const Navigation = () => {
     <header className="l-header" id="header">
       <nav className="nav bd-container">
         <a href="/" className="nav__logo">
-          Logo
+          <h1>g.Portfolio</h1>{' '}
         </a>
         <div className={`nav__menu ${isOpen && 'show-menu'}`} id="nav-menu">
           <ul className="nav__list">

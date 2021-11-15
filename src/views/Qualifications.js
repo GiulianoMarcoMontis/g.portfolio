@@ -239,7 +239,7 @@ const Qualifications = () => {
 
             {/* MA */}
             <div className="qualifications__data">
-              <h3 className="qualifications__area">M.A. European Studies</h3>
+              <h3 className="qualifications__area">M.A. in European Studies</h3>
 
               <div className="qualifications__box">
                 <span className="qualifications__work">
@@ -275,7 +275,7 @@ const Qualifications = () => {
             {/* BA */}
             <div className="qualifications__data">
               <h3 className="qualifications__area">
-                B.A. International & Diplomatic Sciences
+                B.A. in International & Diplomatic Sciences
               </h3>
 
               <div className="qualifications__box">

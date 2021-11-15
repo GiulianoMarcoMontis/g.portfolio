@@ -9,6 +9,7 @@ const About = () => {
     easing: 'ease-in-sine',
     delay: 200,
   });
+
   return (
     <section
       className="about section bd-container bd-grid"
@@ -39,18 +40,20 @@ const About = () => {
             solutions with an open eye to modern aesthetics & design.
           </p>
           <div>
-            <span className="about__number">1+</span>
-            <span className="about__achievement">Years of Experience</span>
+            <span className="about__number">1+ years</span>
+            <span className="about__achievement">Web Dev Experience</span>
           </div>
 
           <div>
             <span className="about__number">10+</span>
-            <span className="about__achievement">Projects</span>
+            <span className="about__achievement">Web Dev Technologies</span>
           </div>
 
           <div>
-            <span className="about__number">7</span>
-            <span className="about__achievement">Best work awards</span>
+            <span className="about__number">5+ years</span>
+            <span className="about__achievement">
+              Transferable skills experience
+            </span>
           </div>
         </div>
         <img
