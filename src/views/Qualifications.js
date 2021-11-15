@@ -1,13 +1,27 @@
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const Qualifications = () => {
+  // Animations on slide init
+  Aos.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 100,
+  });
+
   return (
     <section
-      className="qualifications section bd-container bg-grid"
+      className="qualifications section bd-container bd-grid"
       id="qualifications"
+      data-aos="fade-up"
     >
-      <span className="section-subtitle">Experience & Education</span>
-      <h2 className="section-title">Qualifications</h2>
+      <div>
+        <span className="section-subtitle">Experience & Education</span>
+        <h2 className="section-title">Qualifications</h2>
+      </div>
 
-      <div className="qualifications__container bg-grid">
+      <div className="qualifications__container bd-grid">
         {/* work */}
         <div className="qualifications__content">
           <h2 className="qualifications__title">

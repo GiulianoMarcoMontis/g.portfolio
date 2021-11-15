@@ -1,8 +1,10 @@
 const Contacts = () => {
   return (
-    <section className="contacts section bd-container bg-grid" id="contacts">
-      <span className="section-subtitle">Looking for a new colleague?</span>
-      <h2 className="section-title">Contact me</h2>
+    <section className="contacts section bd-container bd-grid" id="contacts">
+      <div>
+        <span className="section-subtitle">Looking for a new colleague?</span>
+        <h2 className="section-title">Contact me</h2>
+      </div>
 
       <div className="contacts__container bd-grid">
         <div className="contacts__content bd-grid">

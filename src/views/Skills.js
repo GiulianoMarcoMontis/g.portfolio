@@ -1,12 +1,25 @@
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const Skills = () => {
+  // Animations on slide init
+  Aos.init({
+    offset: 100,
+    duration: 600,
+    easing: 'ease-in-out',
+    delay: 100,
+  });
+
   return (
-    <section className="skills section bd-container bg-grid" id="skills">
-      <span className="section-subtitle">What I bring with</span>
-      <h2 className="section-title">Skills</h2>
+    <section className="skills section bd-container bd-grid" id="skills">
+      <div>
+        <span className="section-subtitle">What I bring with</span>
+        <h2 className="section-title">Skills</h2>
+      </div>
 
       <div className="skills__container bd-grid">
         {/* Development */}
-        <div className="skills__data">
+        <div className="skills__data" data-aos="slide-right">
           <svg
             className="skills__icon"
             fill="#000000"
@@ -24,7 +37,7 @@ const Skills = () => {
         </div>
 
         {/* Design */}
-        <div className="skills__data">
+        <div className="skills__data" data-aos="slide-left">
           <svg
             className="skills__icon"
             fill="#000000"
@@ -42,7 +55,7 @@ const Skills = () => {
         </div>
 
         {/* teamwork */}
-        <div className="skills__data">
+        <div className="skills__data" data-aos="slide-right">
           <svg
             className="skills__icon"
             fill="#000000"
@@ -60,7 +73,7 @@ const Skills = () => {
         </div>
 
         {/* coaching */}
-        <div className="skills__data">
+        <div className="skills__data" data-aos="slide-left">
           <svg
             className="skills__icon"
             fill="#000000"

@@ -1,11 +1,11 @@
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer__description bd-container">
-        <h1 className="footer_title">Giuliano Montis</h1>
-        <p>
-          I am Giuliano and this is my portfolio website. You can reach out to
-          me here
+      <div className="footer__container bd-container">
+        <h1 className="footer__title">Giuliano Montis</h1>
+        <p className="footer__description">
+          I am Giuliano and this is my portfolio website. <br />
+          You can reach out to me here
         </p>
 
         <div className="footer__social">
@@ -80,7 +80,11 @@ const Footer = () => {
 
         <p className="footer__copy">
           &#169; 2021{' '}
-          <a href="https://icons8.com/" target="_blank" rel="noreferrer">
+          <a
+            href="https://giuliano-montis.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             g.
           </a>
         </p>

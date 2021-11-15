@@ -1,1 +1,54 @@
 @use '../abstracts/' as *;
+
+.footer {
+  background-color: $bg-color--primary-dark;
+  color: $bg-color--primary-lighter;
+  text-align: center;
+}
+
+.footer__container {
+  padding: $padding-6 0;
+}
+
+.footer__title {
+  font-size: $f-size-h1;
+  margin-bottom: $margin-1;
+  font-weight: $f-wight-semi-bold;
+}
+
+.footer__description {
+  margin-bottom: $margin-3;
+}
+
+.footer__social {
+  margin-bottom: $margin-6;
+}
+
+.footer__social-icon {
+  transition: 0.3s;
+
+  svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: $bg-color--primary-lighter;
+    margin: 0 $margin-1;
+  }
+}
+
+.footer__social-icon:hover {
+  svg {
+    fill: $bg-color--primary-light;
+  }
+}
+
+.footer__copy {
+  font-size: $f-size-x-small;
+  color: $bg-color--primary-light;
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: $bg-color--primary-lighter;
+  }
+}

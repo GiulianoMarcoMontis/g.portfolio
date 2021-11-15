@@ -26,3 +26,11 @@
 .skills__description {
   margin-bottom: $margin-4;
 }
+
+//// media queries
+
+@include minQuery($bp-mobile-hr) {
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

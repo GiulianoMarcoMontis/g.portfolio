@@ -15,6 +15,7 @@ const Projects = () => {
 
   // useEffect to update the projects based on the selected technology
   useEffect(() => {
+    setProjects([]);
     setProjects(projectData);
 
     const projectsByTech = projectData.filter((project, i) =>
@@ -32,9 +33,11 @@ const Projects = () => {
   };
 
   return (
-    <section className="projects section bd-container bg-grid" id="projects">
-      <span className="section-subtitle">My code</span>
-      <h2 className="section-title">Projects</h2>
+    <section className="projects section bd-container bd-grid" id="projects">
+      <div>
+        <span className="section-subtitle">My code</span>
+        <h2 className="section-title">Projects</h2>
+      </div>
 
       {/* filters by tech */}
       <div className="projects__nav">

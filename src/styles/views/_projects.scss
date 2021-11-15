@@ -29,3 +29,11 @@
   background-color: #000;
   border-radius: $b-radius-normal;
 }
+
+//// media queries
+
+@include minQuery($bp-mobile-hr) {
+  .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

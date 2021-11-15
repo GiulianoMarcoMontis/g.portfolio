@@ -51,10 +51,17 @@
   gap: 0.5rem;
 
   .projectsCard__tech {
-    font-size: $f-size-small;
+    font-size: $f-size-x-small;
     color: $bg-color--primary-lighter;
     background-color: $bg-color--primary-light;
-    padding: $padding-1 $padding-2;
+    padding: 0.25rem $padding-1;
     border-radius: $b-radius-normal;
   }
+}
+
+// animations
+
+.flip-in-diag-1-bl {
+  animation: flip-in-diag-1-bl 0.8s 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
 }

@@ -2,9 +2,9 @@ const Home = () => {
   return (
     <section className="home" id="home">
       <div className="home__container bd-container bd-grid">
-        <div className="home__data">
+        <div className="home__data slide-in-bck-tl">
           <span className="home__greeting">Hello, my name is</span>
-          <h1 className="home__name">Giuliano</h1>
+          <h1 className="home__name tracking-in-expand-fwd">Giuliano</h1>
           <span className="home__profession">
             Junior Web & Software Developer
           </span>
@@ -67,7 +67,7 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="home__img">
+        <div className="home__img slide-in-bck-br">
           <img src="/img/pictures/face2.png" alt="profile" />
         </div>
       </div>

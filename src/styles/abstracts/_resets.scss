@@ -38,3 +38,11 @@ img {
   height: auto;
   display: block;
 }
+
+//// media queries
+
+@include minQuery($bp-tablet-sm) {
+  body {
+    margin: 0;
+  }
+}

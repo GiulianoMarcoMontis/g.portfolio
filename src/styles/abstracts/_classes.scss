@@ -26,10 +26,22 @@
 .bd-container {
   max-width: 1024px;
   width: calc(100% - 2rem);
-  margin: 0 $margin-2;
+  margin: 0 auto;
 }
 
 .bd-grid {
   display: grid;
   gap: 1.5rem;
+}
+
+//// media queries
+
+@include minQuery($bp-tablet-sm) {
+  .section {
+    padding-top: 6rem;
+  }
+
+  .section-title {
+    margin-bottom: $margin-5;
+  }
 }

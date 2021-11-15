@@ -16,21 +16,6 @@
   align-items: center;
 }
 
-@include mQuery($bp-tablet-sm) {
-  .nav__menu {
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    padding-top: $padding-3;
-    text-align: center;
-    background-color: #000;
-    transition: 0.4s;
-    box-shadow: $b-shadow-normal;
-    border-radius: 0 0 $b-radius-normal $b-radius-normal;
-  }
-}
-
 .nav__item {
   margin-bottom: $margin-3;
 }
@@ -106,4 +91,40 @@
 .show-scroll {
   visibility: visible;
   bottom: 1.5rem;
+}
+
+//// media queries
+
+@include maxQuery($bp-tablet-sm) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding-top: $padding-3;
+    text-align: center;
+    background-color: #000;
+    transition: 0.4s;
+    box-shadow: $b-shadow-normal;
+    border-radius: 0 0 $b-radius-normal $b-radius-normal;
+  }
+}
+
+@include minQuery($bp-tablet-sm) {
+  .nav {
+    height: calc($nav-height + 1.5rem);
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__item {
+    margin-left: $margin-5;
+    margin-bottom: 0;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
 }

@@ -46,3 +46,17 @@
   height: 1rem;
   margin-right: $margin-1;
 }
+
+//// media queries
+
+@include minQuery($bp-mobile-hr) {
+  .qualifications__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include minQuery($bp-laptop-sm) {
+  .qualifications__container {
+    column-gap: 6rem;
+  }
+}

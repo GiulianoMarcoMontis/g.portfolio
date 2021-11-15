@@ -3,8 +3,14 @@
 // mix media queries
 // call it with @include mQuery() and pass one of the breakpoints
 
-@mixin mQuery($bp) {
+@mixin maxQuery($bp) {
   @media screen and (max-width: $bp) {
+    @content;
+  }
+}
+
+@mixin minQuery($bp) {
+  @media screen and (min-width: $bp) {
     @content;
   }
 }

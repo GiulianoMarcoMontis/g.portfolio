@@ -21,3 +21,17 @@
   width: 14rem;
   border-radius: $b-radius-normal;
 }
+
+//// media queries
+
+@include minQuery($bp-mobile-hr) {
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include minQuery($bp-tablet-sm) {
+  .about__img {
+    width: 20rem;
+  }
+}

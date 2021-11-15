@@ -22,8 +22,8 @@ export const projectData = [
     technologies: ['React.js', 'Sass'],
     category: 'SPA',
     img: '',
-    gitHub: '',
-    deployment: '',
+    gitHub: 'https://github.com/GiulianoMarcoMontis/g.portfolio',
+    deployment: 'https://giuliano-montis.vercel.app/',
   },
   {
     projectName: 'Oops, I Killed It Again (OIKIA)',

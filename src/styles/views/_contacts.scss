@@ -13,6 +13,7 @@
   border-radius: $b-radius-normal;
   padding: $padding-3;
   text-align: center;
+  @include flex-col-center;
   box-shadow: $b-shadow-normal;
   transition: 0.4s;
 }

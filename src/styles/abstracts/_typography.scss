@@ -28,13 +28,8 @@ $f-wight-semi-bold: 600;
 $f-wight-bold: 700;
 
 // media queries for root
-@include mQuery($bp-mobile-md) {
-  :root {
-    //font-size: 100%;
-  }
-}
 
-@include mQuery($bp-tablet-sm) {
+@include maxQuery($bp-tablet-sm) {
   :root {
     $f-size-x-large: 4.5rem;
     $f-size-h1: 2.25rem;
@@ -43,17 +38,5 @@ $f-wight-bold: 700;
     $f-size-normal: 1rem;
     $f-size-small: 0.875rem;
     $f-size-x-small: 0.813rem;
-  }
-}
-
-@include mQuery($bp-laptop-sm) {
-  :root {
-    //font-size: 120%;
-  }
-}
-
-@include mQuery($bp-desktop-sm) {
-  :root {
-    //font-size: 150%;
   }
 }
