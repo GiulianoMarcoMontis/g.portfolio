@@ -44,7 +44,7 @@ const Navigation = () => {
               </a>
             </li>
             <li className="nav__item " onClick={() => toggleHandler()}>
-              <a href="#contacts" className="nav__link active-link">
+              <a href="#contacts" className="nav__link">
                 Contacts
               </a>
             </li>
@@ -52,7 +52,7 @@ const Navigation = () => {
         </div>
 
         <div
-          className={`nav__toggle ${isOpen && 'show-menu'}`}
+          className={`nav__toggle`}
           id="nav-toggle"
           onClick={() => toggleHandler()}
         >

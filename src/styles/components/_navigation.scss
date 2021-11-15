@@ -32,6 +32,7 @@
 .nav__logo,
 .nav__toggle {
   color: $bg-color--primary-lighter;
+  z-index: $z-fixed;
 }
 
 .toggler__svg {
@@ -107,6 +108,11 @@
     transition: 0.4s;
     box-shadow: $b-shadow-normal;
     border-radius: 0 0 $b-radius-normal $b-radius-normal;
+    z-index: $z-tooltip;
+  }
+
+  .show-menu {
+    top: $nav-height;
   }
 }
 
