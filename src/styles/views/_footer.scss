@@ -56,7 +56,7 @@
 }
 
 .footer__img {
-  width: 50%;
+  width: 10rem;
   height: 3rem;
   margin-bottom: $margin-3;
 
@@ -67,14 +67,14 @@
       width: 3rem;
       position: absolute;
       top: -3.1rem;
-      right: 1.5rem;
+      left: 3.4rem;
       z-index: $z-tooltip;
     }
 
     .myTricycle {
       width: 4rem;
       position: absolute;
-      right: 2.2rem;
+      left: 2rem;
     }
   }
 }
@@ -95,12 +95,16 @@
 
 @keyframes cycle {
   0% {
-    transform: translateX(0);
+    transform: translateX(10rem);
+    opacity: 0;
   }
   50% {
     transform: translateX(-5rem);
+    opacity: 1;
+    transform: rotateY(180deg);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-10rem);
+    opacity: 0;
   }
 }

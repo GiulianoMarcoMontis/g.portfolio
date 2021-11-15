@@ -9,7 +9,7 @@ const ProjectCard = ({
   deployment,
 }) => {
   return (
-    <div className="projectsCard__content flip-in-diag-1-bl">
+    <div className="projectsCard__content">
       <a href={deployment} target="_blank" rel="noreferrer">
         <img
           className="projectsCard__img"
