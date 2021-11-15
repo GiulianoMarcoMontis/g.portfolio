@@ -9,7 +9,7 @@
 }
 
 .contacts__box {
-  background-color: #fff;
+  background-color: $bgco-light;
   border-radius: $b-radius-normal;
   padding: $padding-3;
   text-align: center;
@@ -26,7 +26,7 @@
   width: 3rem;
   height: 3rem;
   svg {
-    fill: $bg-color--primary;
+    fill: $bgco-action--primary;
   }
 }
 
@@ -47,6 +47,6 @@
   svg {
     width: 3rem;
     height: 3rem;
-    fill: $bg-color--primary;
+    fill: $fco-special--dark;
   }
 }

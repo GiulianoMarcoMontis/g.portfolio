@@ -7,11 +7,12 @@ import Navigation from './components/Navigation';
 
 // views
 import Home from './views/Home';
+
 import About from './views/About';
 import Qualifications from './views/Qualifications';
 import Skills from './views/Skills';
 import Projects from './views/Projects';
-import Design from './views/Design';
+// import Design from './views/Design';
 import Contacts from './views/Contacts';
 import Footer from './views/Footer';
 
@@ -31,7 +32,7 @@ const App = () => {
         <Qualifications />
         <Skills />
         <Projects />
-        <Design />
+        {/* <Design /> */}
         <Contacts />
         <Footer />
       </main>

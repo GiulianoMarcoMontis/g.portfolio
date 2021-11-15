@@ -8,21 +8,94 @@
 .home__container {
   position: relative;
   height: calc(100vh - $nav-height);
-  grid-template-rows: repeat(2, max-content);
-  align-content: space-around;
-  row-gap: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__hero {
+  width: 90%;
+  margin-bottom: $margin-6;
+
+  #portfolio-hero {
+    width: 100%;
+
+    mask {
+      animation: fill-animate 2s ease-in-out forwards 3.5s;
+    }
+
+    // P - 1
+    path:nth-child(2) {
+      stroke-dasharray: 279;
+      stroke-dashoffset: 279;
+      animation: stroke-animate 2s ease forwards;
+    }
+
+    // O
+    path:nth-child(3) {
+      stroke-dasharray: 171px;
+      stroke-dashoffset: 171px;
+      animation: stroke-animate 2s ease forwards 0.3s;
+    }
+
+    // R
+    path:nth-child(4) {
+      stroke-dasharray: 204px;
+      stroke-dashoffset: 204px;
+      animation: stroke-animate 2s ease forwards 0.6s;
+    }
+
+    // T
+    path:nth-child(5) {
+      stroke-dasharray: 219px;
+      stroke-dashoffset: 219px;
+      animation: stroke-animate 2s ease forwards 0.9s;
+    }
+    // F
+    path:nth-child(6) {
+      stroke-dasharray: 341px;
+      stroke-dashoffset: 341px;
+      animation: stroke-animate 2s ease forwards 1.2s;
+    }
+    // O
+    path:nth-child(7) {
+      stroke-dasharray: 171px;
+      stroke-dashoffset: 171px;
+      animation: stroke-animate 2s ease forwards 1.5s;
+    }
+    // L
+    path:nth-child(8) {
+      stroke-dasharray: 341px;
+      stroke-dashoffset: 341px;
+      animation: stroke-animate 2s ease forwards 1.8s;
+    }
+    // I
+    path:nth-child(9) {
+      stroke-dasharray: 279px;
+      stroke-dashoffset: 279px;
+      animation: stroke-animate 2s ease forwards 2.1s;
+    }
+    // O
+    path:nth-child(10) {
+      stroke-dasharray: 171px;
+      stroke-dashoffset: 171px;
+      animation: stroke-animate 2s ease forwards 2.4s;
+    }
+  }
 }
 
 .home__data {
-  border-left: 0.3rem dotted $bgco-action--secondary;
   color: $fco-light;
   padding-left: $padding-3;
   z-index: $z-tooltip;
+  @include flex-col-center;
 }
 
 .home__name {
   font-size: 5rem;
-  //color: $fco-special--light;
+  color: $fco-special--light;
 }
 
 .home__profession,
@@ -84,8 +157,6 @@
 @include minQuery($bp-tablet-sm) {
   .home__container {
     min-height: 100vh;
-    grid-template-rows: max-content 0.5fr;
-    align-content: flex-end;
   }
 
   .home__greeting {
@@ -114,6 +185,10 @@
 }
 
 .tracking-in-expand-fwd {
-  animation: tracking-in-expand-fwd 0.6s 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+  animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.61, 0.355, 1) 3s
     both;
+}
+
+.fade-in {
+  animation: fade-in 3s cubic-bezier(0.39, 0.575, 0.565, 1) both 3s;
 }

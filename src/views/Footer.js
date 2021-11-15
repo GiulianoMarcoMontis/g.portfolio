@@ -1,3 +1,5 @@
+import tricycle from '../assets/icons/tricycle.png';
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -78,21 +80,38 @@ const Footer = () => {
           </a>
         </div>
 
-        <p className="footer__copy">
-          &#169; 2021{' '}
-          <a
-            href="https://giuliano-montis.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            g.
-          </a>
-        </p>
-        <p className="footer__copy">
-          <a href="https://icons8.com/" target="_blank" rel="noreferrer">
-            All icons by Icons8
-          </a>
-        </p>
+        <div className="footer__img ">
+          <div className="animateMe cycle">
+            <img
+              className="myHead shake-bottom"
+              src="/img/pictures/face2.png"
+              alt="profile"
+            />
+            <img
+              className="myTricycle shake-bottom-2 "
+              src={tricycle}
+              alt="tricycle"
+            />
+          </div>
+        </div>
+
+        <div>
+          <p className="footer__copy">
+            &#169; 2021{' '}
+            <a
+              href="https://giuliano-montis.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              g.
+            </a>
+          </p>
+          <p className="footer__copy">
+            <a href="https://icons8.com/" target="_blank" rel="noreferrer">
+              All icons by Icons8
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );

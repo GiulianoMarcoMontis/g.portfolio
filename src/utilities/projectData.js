@@ -21,7 +21,7 @@ export const projectData = [
     ],
     technologies: ['React.js', 'Sass'],
     category: 'SPA',
-    img: '',
+    img: '/img/screenshots/Portfolio.png',
     gitHub: 'https://github.com/GiulianoMarcoMontis/g.portfolio',
     deployment: 'https://giuliano-montis.vercel.app/',
   },

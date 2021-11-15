@@ -19,7 +19,7 @@ const Skills = () => {
 
       <div className="skills__container bd-grid">
         {/* Development */}
-        <div className="skills__data" data-aos="slide-right">
+        <div className="skills__data">
           <svg
             className="skills__icon"
             fill="#000000"
@@ -39,7 +39,7 @@ const Skills = () => {
         </div>
 
         {/* Design */}
-        <div className="skills__data" data-aos="slide-left">
+        <div className="skills__data">
           <svg
             className="skills__icon"
             fill="#000000"
@@ -59,7 +59,7 @@ const Skills = () => {
         </div>
 
         {/* teamwork */}
-        <div className="skills__data" data-aos="slide-right">
+        <div className="skills__data">
           <svg
             className="skills__icon"
             fill="#000000"
@@ -81,7 +81,7 @@ const Skills = () => {
         </div>
 
         {/* coaching */}
-        <div className="skills__data" data-aos="slide-left">
+        <div className="skills__data">
           <svg
             className="skills__icon"
             fill="#000000"
