@@ -39,6 +39,7 @@ const Contacts = () => {
             <h3 className="contacts__title">Email</h3>
             <span className="contacts__description">
               <a
+                className="mailto"
                 href="mailto:giuliano.montis@gmail.com"
                 target="_blank"
                 rel="noreferrer"
