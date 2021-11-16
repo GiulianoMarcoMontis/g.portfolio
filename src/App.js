@@ -30,7 +30,6 @@ const App = () => {
         <Home />
         <About />
         <Qualifications />
-
         <Skills />
         <TechStack />
         <Projects />

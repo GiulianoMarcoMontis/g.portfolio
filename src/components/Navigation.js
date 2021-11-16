@@ -37,11 +37,11 @@ const Navigation = () => {
                 Projects
               </a>
             </li>
-            <li className="nav__item" onClick={() => toggleHandler()}>
+            {/* <li className="nav__item" onClick={() => toggleHandler()}>
               <a href="#design" className="nav__link">
                 Design
               </a>
-            </li>
+            </li> */}
             <li className="nav__item " onClick={() => toggleHandler()}>
               <a href="#contacts" className="nav__link">
                 Contacts
