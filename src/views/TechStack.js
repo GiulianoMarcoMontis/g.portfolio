@@ -597,7 +597,7 @@ const TechStack = () => {
               d="M19.639 25.697L22.295 25.697 20.967 20.629z"
             />
           </svg>
-          <span className="section-subtitle">mySQL</span>
+          <span className="section-subtitle">Illustrator</span>
         </div>
       </div>
 
