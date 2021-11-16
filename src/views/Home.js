@@ -154,7 +154,7 @@ const Home = () => {
             </a>
           </div>
           <a download href="/cv/cv.pdf" className="button">
-            Download Cv
+            Download CV
           </a>
         </div>
       </div>
