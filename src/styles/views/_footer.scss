@@ -1,18 +1,18 @@
 @use '../abstracts/' as *;
 
 .footer {
-  background-color: $bg-color--primary-dark;
-  color: $bg-color--primary-lighter;
+  background-color: $bgco-action--primary;
+  color: $fco-light;
   text-align: center;
 }
 
 .footer__container {
   padding: $padding-6 0;
-
   @include flex-col-center;
 }
 
 .footer__title {
+  color: $fco-special--light;
   font-size: $f-size-h1;
   margin-bottom: $margin-1;
   font-weight: $f-wight-semi-bold;
@@ -32,7 +32,7 @@
   svg {
     width: 1.4rem;
     height: 1.4rem;
-    fill: $bg-color--primary-lighter;
+    fill: $fco-special--light;
     margin: 0 $margin-1;
   }
 }
@@ -79,6 +79,8 @@
   }
 }
 
+//// animations
+
 .shake-bottom {
   animation: shake-bottom 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
     alternate both;
@@ -95,16 +97,16 @@
 
 @keyframes cycle {
   0% {
-    transform: translateX(10rem);
+    transform: translateX(8rem);
     opacity: 0;
   }
   50% {
-    transform: translateX(-5rem);
+    transform: translateX(-4rem);
     opacity: 1;
     transform: rotateY(180deg);
   }
   100% {
-    transform: translateX(-10rem);
+    transform: translateX(-8rem);
     opacity: 0;
   }
 }

@@ -10,12 +10,12 @@ import Home from './views/Home';
 
 import About from './views/About';
 import Qualifications from './views/Qualifications';
+import TechStack from './views/TechStack';
 import Skills from './views/Skills';
 import Projects from './views/Projects';
 // import Design from './views/Design';
 import Contacts from './views/Contacts';
 import Footer from './views/Footer';
-
 // import NotFound from './views/NotFound';
 
 const App = () => {
@@ -30,6 +30,7 @@ const App = () => {
         <Home />
         <About />
         <Qualifications />
+        <TechStack />
         <Skills />
         <Projects />
         {/* <Design /> */}
