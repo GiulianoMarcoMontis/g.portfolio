@@ -45,12 +45,12 @@ const About = () => {
           </div>
 
           <div>
-            <span className="about__number">10+</span>
+            <span className="about__number">10+ techs</span>
             <span className="about__achievement">Web Dev Technologies</span>
           </div>
 
           <div>
-            <span className="about__number">5+ years</span>
+            <span className="about__number">7+ years</span>
             <span className="about__achievement">
               Transferable skills experience
             </span>

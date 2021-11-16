@@ -83,38 +83,6 @@
   border-radius: $b-radius-normal;
 }
 
-// scroll to the top icon
-
-.scrollTop {
-  position: fixed;
-  right: 1rem;
-  bottom: -20%;
-  @include flex-col-center;
-  padding: $padding-1;
-  background-color: $bgco-action--primary;
-  border-radius: $b-radius-normal;
-  z-index: $z-tooltip;
-  transition: 0.4s;
-  visibility: hidden;
-}
-
-.scrollTop:hover {
-  background-color: $bgco-light--darker;
-}
-
-.scrollTop__icon {
-  width: 1.3rem;
-  height: 1.3rem;
-  cursor: pointer;
-}
-
-// show hide scrollTop icon
-
-.show-scroll {
-  visibility: visible;
-  bottom: 1.5rem;
-}
-
 //// media queries
 
 @include maxQuery($bp-tablet-sm) {

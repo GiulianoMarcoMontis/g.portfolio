@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 // assets
 import menu from '../assets/icons/menu.svg';
-import scrollTop from '../assets/icons/scrollUp.svg';
 
 const Navigation = () => {
   //// states
@@ -59,13 +58,6 @@ const Navigation = () => {
           <img src={menu} alt="nav toggler icon" className="toggler__svg" />
         </div>
       </nav>
-      <a href="/" className="scrollTop" id="scroll-top">
-        <img
-          src={scrollTop}
-          alt="scroll to the top icon"
-          className="scrollTop__icon"
-        />
-      </a>
     </header>
   );
 };

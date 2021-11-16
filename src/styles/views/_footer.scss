@@ -39,19 +39,19 @@
 
 .footer__social-icon:hover {
   svg {
-    fill: $bg-color--primary-light;
+    fill: $fco-light--darker;
   }
 }
 
 .footer__copy {
   font-size: $f-size-x-small;
-  color: $bg-color--primary-light;
+  color: $fco-light--darker;
 
   a:link,
   a:visited,
   a:hover,
   a:active {
-    color: $bg-color--primary-lighter;
+    color: $fco-light;
   }
 }
 
