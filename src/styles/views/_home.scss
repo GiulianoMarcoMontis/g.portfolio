@@ -143,6 +143,12 @@
   }
 }
 
+.downloads {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5rem;
+}
+
 //// media queries
 
 @include minQuery($bp-mobile-hr) {

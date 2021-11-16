@@ -153,9 +153,14 @@ const Home = () => {
               </svg>
             </a>
           </div>
-          <a download href="/cv/cv.pdf" className="button">
-            Download CV
-          </a>
+          <div className="downloads">
+            <a download href="/cv/Giuliano_Montis_ENG.pdf" className="button">
+              Download CV
+            </a>
+            <a download href="/cv/Giuliano_Montis_DEU.pdf" className="button">
+              CV herunterladen
+            </a>
+          </div>
         </div>
       </div>
     </section>
