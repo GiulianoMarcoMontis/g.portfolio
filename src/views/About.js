@@ -22,6 +22,11 @@ const About = () => {
       </div>
 
       <div className="about__container bd-grid">
+        <img
+          src="/img/pictures/portfolioPic-min.jpg"
+          alt="profile"
+          className="about__img"
+        />
         <div className="about__data bd-grid">
           <p className="about__description">
             <span>
@@ -56,11 +61,6 @@ const About = () => {
             </span>
           </div>
         </div>
-        <img
-          src="/img/pictures/face2.png"
-          alt="profile"
-          className="about__img"
-        />
       </div>
     </section>
   );
