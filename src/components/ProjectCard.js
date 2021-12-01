@@ -38,7 +38,7 @@ const ProjectCard = ({
         <div className="projectsCard__actions">
           <a
             className=" button-link"
-            href={deployment}
+            href={gitHub}
             target="_blank"
             rel="noreferrer"
           >
